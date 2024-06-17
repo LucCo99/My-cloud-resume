@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lucas's Resume</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Draco is free PSD &amp; HTML template by @afnizarnur">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/kube.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/custom.min.css" />
+    <link rel="shortcut icon" href="img/favicon.png" />
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<style>
+		.intro h1:before {
+			/* Edit this with your name or anything else */
+			content: ' AWS';
+		}
+	</style>
+</head>
+<body>
+	<!-- Navigation -->
+	<div class="main-nav">
+		<div class="container">
+			<header class="group top-nav">
+				<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
+				    <span class="logo">LUCAS</span>
+				</div>
+			    <nav id="navbar-1" class="navbar item-nav">
+				    <ul>
+				        <li><a href="test1.html">Main Page </a></li>
+						<li><a href="page2.html">Cloud Resume Challenge - AWS</a></li>
+						<div class="counter-number"></div>
+				    </ul>
+				</nav>
+			</header>
+		</div>
+	</div>
+
+	<!-- Introduction -->
+	<div class="intro section" id="about">
+		<div class="container">
+			<div class="units-row units-split wrap">
+				<div class="unit-20">
+					<img src="img/cloud.png" alt="Avatar">
+				</div>
+				<div class="unit-80">
+					<h1>The Cloud Resume Challenge <br><span id="typed"></span></h1>
+				</div>	
+				<p>
+					I recently discovered "The Cloud Resume Challenge" and was instantly drawn to its exciting premise. I've eagerly accepted the challenge, which involves creating a cloud-based resume application using AWS Cloud.
+
+					This challenge is an incredible opportunity to demonstrate my cloud computing skills and build a unique portfolio piece. I'm excited to learn new technologies, tackle real-world cloud infrastructure tasks, and showcase my dedication to growth in this field.
+					
+					Follow my journey as I document my progress and celebrate achievements along the way. This challenge represents a significant step in my career, and I'm thrilled to see where it leads.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Table of Contents Architecture Diagram-->
+	<div class="work section second" id="experiences">
+		<div class="container">
+			<h1>Table of Contents</h1>
+			<ul class="work-list">
+				<p>Architecture Diagram</p>
+				<p>HTML & CSS</p>
+				<p>Configure AWS S3</p>
+				<p>HTTPS & DNS</p>
+				<p>Javascript</p>
+				<p>Database</p>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Architecture Diagram-->
+	<div class="work section second" id="experiences">
+		<div class="container">
+			<h1>Architecture Diagram</h1>
+			<ul class="work-list">
+				<img src="img/aws.drawio.png" alt="Architecture Diagram" />
+			</ul>
+		</div>
+	</div>
+
+	<!-- Technical Knowledge -->
+	<div class="work section second" id="experiences">
+		<div class="container">
+			<h1>HTML & CSS </h1>
+			<ul class="work-list">
+				<li>AWS Certified Cloud Practitioner (Amazon Web Services Training and Certification)</li>
+				<li>AWS Cloud Quest: Cloud Practitioner (Amazon Web Services Training and Certification)</li>
+				<li>Jenkins CI/CD involves expertise in setting up Jenkins, configuring jobs and pipelines, version control integration, automated testing, artifact management, security, notifications, and deployment.</li>
+				<li>Skilled in utilizing remote access tools to assist users efficiently from a distance.</li>
+			</ul>
+		</div>
+	</div>
+
+
+	<!-- Work Experience -->
+	<div class="work section second" id="experiences">
+		<div class="container">
+			<h1>Configure AWS S3</h1>
+			<ul>
+				<li>Click on the "Create bucket" button.</li>
+			</ul>
+			<img src="img/create-s3.png" alt="Configure AWS S3" />
+			<ul>
+				<li>Enter a unique bucket name (e.g., "myresumeo-forcloudwork"). Note: Bucket names must be globally unique across all existing bucket names in Amazon S3.</li>
+				<li>Select the AWS region where you wish to create the bucket.</li>
+			</ul>
+			<img src="img/s3-bucket-list.png" alt="Configure AWS S3" />
+			<img src="img/inside-bucket.png" alt="Configure AWS S3" />
+			<ul>
+				<li>Begin uploading your previously developed HTML and CSS files into the S3 bucket.</li>
+			</ul>
+			<img src="img/Static-website-hosting0.png" alt="Configure AWS S3" />
+			<img src="img/Static-website-hosting.png" alt="Configure AWS S3" />
+			<ul>
+				<li>Click on "Properties" and ensure that 'Static web hosting' is enabled. If not, click on "Edit" and enable it.</li>
+			</ul>
+			<img src="img/Static-website-hosting1.png" alt="Configure AWS S3" />
+			<ul>
+				<li>In the "Index document" field, specify 'index.html' as the default index document.</li>
+			</ul>
+		</div>
+	</div>
+	
+
+	<!-- Award & Achievements -->
+	<div class="award section second" id="achievements">
+		<div class="container">
+			<h1>Configure AWS CloudFront</h1>
+		<img src="img/Cloudfront.png" alt="Configure AWS CloudFront" />
+	
+		<ul><li>Navigate to CloudFront in the AWS console. CloudFront acts as a Content Delivery Network (CDN) to deliver website content with lower latency and higher transfer speeds without making the S3 bucket publicly accessible.</li></ul>
+		<img src="img/Cloudfront3.png" alt="Configure AWS CloudFront" />
+		<ul><li>In the "Origin Domain" section, select the S3 bucket that we created earlier, which is "myresumeo-forcloudwork".</li>
+		<li>In the "Origin access" section, select "Origin access control settings". This will generate a policy that we can use later for the S3 bucket.</li></ul>
+		<img src="img/Cloudfront2.png" alt="Configure AWS CloudFront" />
+		<ul><li>In the "Viewers" section, select "HTTPS only" to ensure the secure protocol over HTTPS. The rest of the settings can be left as default.</li>
+		<li>Click "Create" and wait for the distribution to deploy.</li></ul>
+		<img src="img/Cloudfront4.png" alt="Configure AWS CloudFront" />
+		<ul><li>After the distribution is successfully deployed, we will see a "Copy policy" box. This policy will grant the distribution access to our S3 bucket to read the objects since our bucket is not set to public.</li></ul>
+		<img src="img/Cloudfront5.png" alt="Configure AWS CloudFront" />
+		<ul><li>Return to our S3 bucket and click on "Permissions" -> "Bucket Policy" -> "Edit", and paste the policy copied from CloudFront.</li></ul>
+		<img src="img/Cloudfront6.png" alt="Configure AWS CloudFront" />
+		<ul><li>It takes around 5-10 minutes to deploy the distribution.</li></ul>
+		<img src="img/Cloudfront-error.png" alt="Configure AWS CloudFront" />
+		<ul><li>I encountered an issue when I tried to access the CloudFront URL from the distribution, as it gave me an 'Access Denied' error.</li></ul>
+		<img src="img/Cloudfront-error1.png" alt="Configure AWS CloudFront" />
+		<ul><li>I reviewed the policy and updated the policy for the S3 bucket once more.</li></ul>
+		<img src="img/Cloudfront-error2.png" alt="Configure AWS CloudFront" />
+		<ul><li>I encountered another error when trying to access other HTML pages.</li></ul>
+		<img src="img/Cloudfront-done2.png" alt="Configure AWS CloudFront" />
+		<ul><li>Go to your CloudFront distribution in the AWS Management Console, navigate to the "Invalidations" tab, and create a new invalidation.</li></ul>
+		<img src="img/Cloudfront-done3.png" alt="Configure AWS CloudFront" />
+	
+
+
+
+		</div>
+	</div>
+
+	<!-- Technical Skills -->
+	<div class="skills section second" id="skills">
+		<div class="container">
+			<h1>Configure AWS DNS - <h3>setting up custom domain and ssl certificate</h3></h1>
+			<h2>Set Up a Hosted Zone in Route 53</h2>
+			<img src="img/Route53.png" alt="Configure AWS Route 53" />
+			<img src="img/Route53-1.png" alt="Configure AWS Route 53" />
+			<ul>
+				<li>Click on "Hosted zones" in the navigation pane.</li>
+				<li>Click on the "Create hosted zone" button.</li>
+			</ul>
+			<img src="img/Route53-2.png" alt="Configure AWS Route 53" />
+			<ul>
+				<li>Enter your domain name (e.g., example.com) in the "Domain name" field.
+				<li>Choose the appropriate type, usually "Public hosted zone".</li>
+				<li>Click "Create hosted zone"</li>
+			</ul>
+			<img src="img/Route53-3.png" alt="Configure AWS Route 53" />
+			<ul>
+				<li>After the hosted zone is created, click on it to view the details.
+				<li>	In the "Hosted zone details" section, note the names of the four DNS servers listed under "Name Servers".</li>
+			</ul>
+			<h2>Update GoDaddy DNS Settings</h2>
+			<img src="img/Go-Daddy.png" alt="Configure Go Daddy DNS" />
+			<ul>
+				<li>Sign in to your GoDaddy account and open your "My Products" page.</li>
+				<li>Locate your domain and click on the DNS button to the right of it.</li>
+				<li>Scroll to the "Nameservers" section and click on "Change".</li>
+				<li>Select "Enter my own nameservers (advanced)".</li>
+			</ul>
+			<img src="img/Go-Daddy-1.png" alt="Configure Go Daddy DNS" />
+			<ul>
+				<li>Select "I'll use my own nameservers".</li>
+				<li>Enter the Route 53 name servers that you noted earlier. Add each of the four name servers provided by Route 53.</li>
+			</ul>
+			<img src="img/Go-Daddy-2.png" alt="Configure Go Daddy DNS" />
+			<ul>
+				<li>Save your changes.</li>
+			</ul>
+			<h2>Verify DNS Propagation</h2>
+			<ul>
+				<li>DNS changes can take up to 48 hours to propagate fully, although it often happens much sooner.</li>
+				<li>To verify that the domain is pointing to Route 53, you can use a DNS checker tool like "What's My DNS" to see if the name server changes have propagated.</li>
+			</ul>
+		</div>
+	</div>
+
+
+	<!-- Technical Skills -->
+	<div class="skills section second" id="skills">
+		<div class="container">
+			<h1>Database</h1>
+			<h2>Setting up A Dyanamo DB</h2>
+			<img src="img/DynamoDB.png" alt="Configure DynamoDB" />
+			<ul>
+				<li>Amazon DynamoDB is a fully managed NoSQL database service provided by Amazon Web Services (AWS).</li>
+			</ul>
+			<img src="img/DynamoDB-1.png" alt="Configure DynamoDB" />
+			<ul>
+				<li>Navigate to DynamoDB under the "Database" category.</li>
+    			<li>Click on "Create table" and enter a unique name for your table.</li>
+    			<li>Define the table's primary key consisting of a partition key and optional sort key.</li>
+			</ul>
+			<img src="img/DynamoDB-3.png" alt="Configure DynamoDB" />
+			<ul>
+				<li>Under "Actions" click on "Create Item"</li>
+			</ul>
+			<img src="img/DynamoDB-4.png" alt="Configure DynamoDB" />
+			<ul>
+				<li>Assigned value of 1 for "id"</li>
+				<li>Add a new atribute a name it "views" and also assigned value of 1 for it </li>
+			</ul>
+			<img src="img/DynamoDB-2.png" alt="Configure DynamoDB" />\<ul>
+				<li>Under "Actions" click on "Explore Item"</li>
+			</ul>
+			<img src="img/DynamoDB-5.png" alt="Configure DynamoDB" />
+			<ul>
+				<li>Under the item return table we can see that the value of above are all "1" as we asign before  </li>
+				<li>This is where we will store our value for the view count</li>
+			</ul>
+			
+			<p>IN PROGRESS</p>
+		</div>
+	</div>
+
+	<div class="skills section second" id="skills">
+		<div class="container">
+			<h1>API</h1>
+			<h2>Setting up Lambda function</h2>
+			<img src="img/Lambda1.png" alt="Configure Lambda" />
+			<ul>
+				<li>AWS Lambda is a serverless computing service provided by Amazon Web Services (AWS) that allows you to run code without provisioning or managing servers.</li>
+			</ul>
+			
+			<img src="img/Lambda2.png" alt="Configure Lambda" />
+			<ul>
+				<li>Choose "Author from scratch". </li>
+				<li> Enter a function name.</li>
+				<li> Select a runtime</li>
+				<li>Choose or create an execution role.</li>
+			</ul>
+			<img src="img/Lambda3.png" alt="Configure Lambda" />
+			<ul>
+				<li>Select "Enable Function URL" . This allows you to create a dedicated HTTP(S) endpoint for your Lambda function. This feature enables direct HTTP access to your function without needing an additional service like API Gateway</li>
+				<li> Select "Cross-Origin Resource Sharing (CORS)" .This is a security feature implemented by web browsers that allows or restricts resources on a web page to be requested from another domain outside the domain from which the resource originated</li>
+			</ul>
+			<img src="img/Lambda4.png" alt="Configure Lambda" />
+			<ul>
+				<li>This Lambda function interacts with a DynamoDB table named 'Cloudresume'. It retrieves an item with a primary key 'id' of '1', increments the 'views' attribute by 1, updates the item in the table with the new 'views' value, and returns the updated view count.</li>
+			</ul>
+			
+		</div>
+	</div>
+
+	<div class="skills section second" id="skills">
+		<div class="container">
+			<h1>Javascript</h1>
+			<h2>Writting a Javascript to display the viewer counter o the website</h2>
+			<img src="img/Javascript.png" alt="Writting a Javascript" />
+			<img src="img/Javascript1.png" alt="Writting a Javascript" />
+			<img src="img/Javascript2.png" alt="Writting a Javascript" />
+			<img src="img/Javascript3.png" alt="Writting a Javascript" />
+
+
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="units-row">
+			    <div class="unit-50">
+			    	<p>Inspired by Afnizar </p>
+			    </div>
+			    <div class="unit-50">
+					<ul class="social list-flat right">
+						<li><a href="mailto:coluc8440@gmail.com"><i class="fa fa-send"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/lucas-luc-ab3895232/"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+			    </div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Javascript -->
+	<script src="js/index.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/typed.min.js"></script>
+    <script src="js/kube.min.js"></script>
+    <script src="js/site.js"></script>
+    <script>
+		function newTyped(){}$(function(){$("#typed").typed({
+		// Change to edit type effect
+		strings: ["AWS"],
+
+		typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
+    </script>
+</body>
+</html>
